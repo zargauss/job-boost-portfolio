@@ -6,58 +6,54 @@ const DispositifMedicalParkinson = () => {
     <ProjectLayout>
       <ProjectCaseStudy
         title="Dispositif Médical Innovant pour la Maladie de Parkinson"
-        tagline="Comment j'ai développé intégralement un dispositif médical de classe I permettant d'améliorer la qualité de vie des patients parkinsoniens et d'obtenir la certification ISO 13485."
-        context="Resilient Innovation est une startup spécialisée dans l'innovation médicale. En 2017, l'entreprise a identifié un besoin non comblé dans la prise en charge de la maladie de Parkinson : l'absence d'outils de suivi objectif des symptômes moteurs permettant aux neurologues d'ajuster finement les traitements."
-        problem="Les patients parkinsoniens subissent des fluctuations motrices quotidiennes (on/off phases) qui impactent significativement leur qualité de vie. Les neurologues ajustaient les traitements sur la base de carnets de suivi papier peu fiables et de consultations trimestrielles, limitant la précision des ajustements thérapeutiques. 70% des patients ne remplissaient pas correctement leurs carnets, et les délais entre consultations empêchaient une réactivité optimale. L'entreprise n'avait aucune expérience en développement de dispositifs médicaux ni en conformité réglementaire."
-        role="En tant que Responsable R&D, j'étais le seul membre de l'équipe produit au démarrage. J'ai endossé tous les rôles : recherche clinique, développement produit, gestion de la qualité, conformité réglementaire. J'ai ensuite recruté et coordonné une équipe de 3 ingénieurs et 2 partenaires techniques externes."
+        tagline="5 ans à transformer une idée scientifique en solution concrète pour 200 patients atteints de troubles de la marche"
+        context="J'ai rejoint une startup de 3 personnes développant un dispositif médical innovant pour les patients atteints de la maladie de Parkinson. Notre première version, 100% hardware, utilisait le principe du métronome auditif - une technique validée en rééducation - pour aider les patients à retrouver une marche plus fluide. Le marché était significatif : 150 000 patients en France souffrant de troubles de la marche liés à Parkinson, avec 25 000 nouveaux cas par an. Malgré quelques acteurs présents, nous étions les seuls avec un produit commercialisé, nos concurrents ayant privilégié la validation clinique avant la mise sur le marché."
+        problem={`Côté utilisateurs : Les patients Parkinsoniens devaient se contenter d'un dispositif basique sans retour sur leur progression. Les professionnels de santé manquaient de données objectives en vie réelle pour adapter les traitements. Côté business : Absence de remboursement faute d'études cliniques (vente directe uniquement), concurrence mieux positionnée scientifiquement, transition réglementaire complexe avec le nouveau règlement européen (UE) 2017/745, et ressources limitées sans investisseur pour financer le développement.`}
+        role="Durant 5 ans, j'ai occupé un rôle hybride couvrant l'ensemble de la chaîne de valeur produit : R&D et Coordination (gestion de projet, coordination des partenaires externes hardware/software/IA, veille scientifique), Stratégie Clinique (rédaction de protocoles, recherche de financements, relations avec 5 KOL neurologues et MPR), Qualité/Réglementaire (mise en place du système qualité ISO 13485, conformité au règlement DM européen), et Marketing/Impact (automatisation CRM, étude d'impact patient, communications scientifiques)."
         discovery={{
           research: [
-            "J'ai mené une revue de littérature scientifique approfondie sur les biomarqueurs de la maladie de Parkinson et les technologies de suivi disponibles.",
-            "J'ai organisé 12 entretiens avec des neurologues spécialisés en Parkinson pour comprendre leurs besoins en suivi objectif des patients.",
-            "J'ai interviewé 20 patients parkinsoniens pour identifier leurs attentes et contraintes d'utilisation d'un dispositif médical.",
-            "J'ai analysé 5 solutions concurrentes ou complémentaires pour identifier les gaps du marché.",
-            "J'ai participé à 3 conférences médicales (Journées de Neurologie, Movement Disorders Society) pour valider le besoin clinique."
+            "J'ai orchestré le déploiement de la v1 auprès de 200 patients, en récoltant systématiquement les retours via notre CRM. Parallèlement, j'ai initié des collaborations avec 5 Key Opinion Leaders (neurologues et médecins MPR) pour comprendre les besoins cliniques profonds.",
+            "Action clé : Organisation d'expérimentations terrain avec les médecins MPR, générant les premières données d'usage en vie réelle - une première dans notre domaine.",
+            "Insight majeur : Les professionnels avaient besoin de données objectives pour personnaliser les traitements, pas seulement d'un outil de rééducation."
           ],
-          artifacts: ["Revue de littérature", "Entretiens utilisateurs structurés", "Analyse de marché"]
+          artifacts: ["Déploiement v1 auprès de 200 patients", "Retours CRM systématisés", "Expérimentations terrain avec médecins MPR"]
         }}
         strategy={{
           roadmap: [
-            "Phase 1 : Preuve de concept - Validation technique du concept avec un prototype fonctionnel",
-            "Phase 2 : Développement clinique - Étude pilote avec 30 patients pour valider l'efficacité clinique",
-            "Phase 3 : Conformité réglementaire - Mise en place du système de management de la qualité ISO 13485 et préparation du dossier MDR",
-            "Phase 4 : Industrialisation - Passage à l'échelle et préparation à la commercialisation"
+            "Face aux limites de la v1, j'ai défini une vision ambitieuse pour la v2.0 : Analyse en temps réel de la marche avec adaptation automatique du rythme, interface patient pour visualiser les statistiques et progressions, IA avec réseaux de neurones pour exploiter les données en recherche.",
+            "Innovation technique : Conception d'un capteur unique à la taille (accéléromètre + gyroscope) - un défi technique majeur alors que les concurrents utilisaient deux capteurs aux pieds, mais un choix dicté par l'usage terrain et la praticité pour des patients âgés.",
+            "Stratégie de financement : Rédaction et obtention du financement i-LAB pour soutenir le développement, compensant partiellement l'absence d'investisseurs."
           ],
-          prioritization: "La priorisation était guidée par les exigences réglementaires : nous devions d'abord prouver la sécurité et l'efficacité clinique avant de pouvoir commercialiser. La mise en place du SMQ ISO 13485 était un prérequis absolu pour toute certification MDR."
+          prioritization: "La priorisation était guidée par les contraintes de ressources et les besoins terrain. Le choix du capteur unique à la taille, bien que techniquement plus complexe, était dicté par l'observation des usages réels et la praticité pour des patients âgés."
         }}
         delivery={{
           design: [
-            "J'ai défini les spécifications techniques du dispositif en collaboration avec les neurologues et les ingénieurs partenaires.",
-            "J'ai rédigé les protocoles cliniques pour l'étude pilote, en respectant les bonnes pratiques cliniques et les exigences réglementaires.",
-            "J'ai créé les maquettes de l'interface patient et de l'interface médecin, testées auprès de 8 utilisateurs."
+            "Prototype fonctionnel : Développement réussi d'un prototype v2.0 avec analyse temps réel, testé avec des patients sélectionnés qui ont validé l'approche.",
+            "Protocole clinique ambitieux : Rédaction d'un protocole multicentrique pour 200 patients sur 24 mois - prêt à lancer mais bloqué faute de financement."
           ],
           execution: [
-            "J'ai coordonné le développement du prototype avec les partenaires techniques, en gérant les itérations successives basées sur les tests utilisateurs.",
-            "J'ai mis en place intégralement le système de management de la qualité conforme ISO 13485 : documentation qualité, procédures, traçabilité, gestion des risques.",
-            "J'ai piloté l'étude clinique pilote avec 30 patients sur 6 mois, en coordonnant les 3 centres d'investigation et en analysant les résultats.",
-            "J'ai préparé le dossier technique MDR (UE 2017/745) complet avec l'appui d'un consultant réglementaire.",
-            "J'ai recherché et obtenu 450k€ de financements (subventions BPI, région, fonds propres) pour financer le développement."
+            "Mise en conformité réglementaire : Implémentation progressive du système qualité ISO 13485 (audits internes réalisés), préparation à la transition vers le nouveau règlement européen 2017/745.",
+            "Coordination complexe : Gestion des partenaires externes (hardware, software) sans développeurs internes, en traduisant les besoins médicaux en spécifications techniques."
           ],
-          artifacts: ["Protocole clinique", "Documentation ISO 13485 complète", "Dossier technique MDR", "Rapport d'étude clinique"]
+          artifacts: ["Prototype v2.0 fonctionnel", "Protocole clinique multicentrique", "Documentation ISO 13485 progressive", "Spécifications techniques traduites"]
         }}
         results={{
           user: [
-            "Les neurologues ont pu ajuster les traitements avec une précision accrue de 40% grâce au suivi objectif continu des symptômes.",
-            "L'adhésion des patients au suivi a atteint 85% (vs 30% avec les carnets papier), grâce à l'automatisation du dispositif.",
-            "Les patients ont rapporté une amélioration de leur qualité de vie avec un score moyen de 7.2/10 sur l'échelle PDQ-39."
+            "200 patients équipés avec la v1, retrouvant une autonomie de marche.",
+            "Prototype v2.0 validé par les premiers testeurs avec retours positifs.",
+            "Simplification d'usage : Capteur unique vs. double capteur concurrent.",
+            "Données objectives générées pour les professionnels de santé lors des expérimentations."
           ],
           business: [
-            "Le dispositif a obtenu la certification ISO 13485 et le marquage CE comme dispositif médical de classe I, permettant sa commercialisation en Europe.",
-            "L'étude clinique a démontré l'efficacité du dispositif, ouvrant la voie à des partenariats avec des laboratoires pharmaceutiques.",
-            "Le projet a positionné Resilient Innovation comme un acteur reconnu dans l'innovation médicale, générant 3 opportunités de partenariats stratégiques."
+            "Position de pionnier : Seul dispositif commercialisé sur le marché français.",
+            "Financement i-LAB obtenu validant le potentiel d'innovation.",
+            "5 KOL engagés créant une légitimité scientifique.",
+            "Base solide pour une future levée de fonds (protocole clinique prêt, système qualité en cours).",
+            "Blocages identifiés : Base de recharge non finalisée faute de 100k€ supplémentaires, étude clinique non lancée (coût prohibitif), certification ISO 13485 non obtenue (processus interrompu)."
           ],
-          learning: "Ce projet m'a appris que le développement d'un dispositif médical nécessite une approche méthodique et rigoureuse dès le départ. La conformité réglementaire n'est pas une contrainte mais un cadre structurant qui garantit la qualité et la sécurité. La collaboration étroite avec les utilisateurs finaux (patients et médecins) est essentielle pour créer une solution vraiment utile."
+          learning: `Cette expérience fondatrice m'a enseigné trois leçons essentielles pour ma carrière en Product Management : La vision produit ne suffit pas sans les ressources : Avoir identifié le bon problème (données objectives pour personnaliser les soins) et conçu la bonne solution (IA + capteurs) n'a pas suffi. J'ai appris l'importance cruciale de sécuriser les financements et de phaser le développement. L'importance de l'approche terrain : Notre choix d'un capteur unique à la taille, dicté par l'observation des usages réels plutôt que par la facilité technique, illustre la valeur d'une approche user-centric même en deep tech. La polyvalence comme atout : Naviguer entre réglementation, clinique, technique et business m'a donné une vision 360° indispensable au Product Management. J'ai développé une capacité unique à traduire des besoins complexes entre différentes parties prenantes. Fierté personnelle : Avoir maintenu le développement pendant 5 ans avec des ressources minimales, coordonné des partenaires externes sans équipe interne, et posé les bases d'un dispositif innovant qui aurait pu transformer la vie de milliers de patients. Cette expérience, bien qu'inachevée commercialement, a forgé ma capacité à gérer l'ambiguïté, prioriser sous contrainte extrême, et maintenir une vision produit cohérente dans l'adversité - des compétences directement transférables et précieuses dans mon rôle actuel de Product Manager.`
         }}
-        tags={["R&D", "ISO 13485", "Clinical Research", "Dispositifs Médicaux", "MDR"]}
+        tags={["R&D", "ISO 13485", "Clinical Research", "Dispositifs Médicaux", "MDR", "Deep Tech"]}
       />
     </ProjectLayout>
   );
