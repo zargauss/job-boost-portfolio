@@ -3,7 +3,7 @@ import ProjectCaseStudy from "@/components/ProjectCaseStudy";
 
 const ApplicationSuiviRCH = () => {
   return (
-    <ProjectLayout>
+    <ProjectLayout image="/application-suivi-rch.PNG">
       <ProjectCaseStudy
         title="Application de Suivi pour la Rectocolite Hémorragique"
         tagline="Développement d'un outil personnel de tracking médical en 3 semaines, transformant un besoin personnel en solution fonctionnelle grâce à l'IA générative"

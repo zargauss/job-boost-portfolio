@@ -3,7 +3,7 @@ import ProjectCaseStudy from "@/components/ProjectCaseStudy";
 
 const PlateformePanelAnticorps = () => {
   return (
-    <ProjectLayout>
+    <ProjectLayout image="/plateforme-panel-anticorps.PNG">
       <ProjectCaseStudy
         title="Plateforme B2B de Création de Panels d'Anticorps pour la Recherche Pharmaceutique"
         tagline="Comment nous avons conçu une plateforme SaaS permettant aux laboratoires de recherche de réduire de 60% les délais de développement de panels d'anticorps personnalisés, tout en garantissant la qualité et la traçabilité."

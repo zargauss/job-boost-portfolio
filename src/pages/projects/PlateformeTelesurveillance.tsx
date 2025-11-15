@@ -3,7 +3,7 @@ import ProjectCaseStudy from "@/components/ProjectCaseStudy";
 
 const PlateformeTelesurveillance = () => {
   return (
-    <ProjectLayout>
+    <ProjectLayout image="/plateforme-telesurveillance.png">
       <ProjectCaseStudy
         title="Plateforme de télésurveillance pour pathologies chroniques"
         tagline="Comment j'ai orchestré la transition de 5000+ patients vers une nouvelle génération d'outils de coordination des soins"
