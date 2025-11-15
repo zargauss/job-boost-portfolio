@@ -23,7 +23,8 @@ const Projects = () => {
       description: "Développement d'un dispositif médical innovant de classe I pour l'amélioration de la qualité de vie des patients",
       tags: ["R&D", "ISO 13485", "Clinical Research"],
       link: "/projets/dispositif-medical-parkinson",
-      type: "professional"
+      type: "professional",
+      image: "/dispositif-medical-parkinson.png"
     },
     {
       id: "application-suivi-rch",
