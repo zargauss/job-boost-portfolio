@@ -88,30 +88,31 @@ const Projects = () => {
                     }}
                     className="h-full"
                   >
-                    <div className="space-y-0">
-                      {/* Image du projet */}
-                      <div className="relative w-full h-48 bg-secondary/50 rounded-t-lg overflow-hidden border-t border-x border-border">
-                        <img
-                          src={project.image || `/placeholder.svg`}
-                          alt={project.title}
-                          className={project.image ? "w-full h-full object-cover" : "w-full h-full object-contain opacity-30 p-8"}
-                          onError={(e) => {
-                            // Placeholder si l'image n'existe pas
-                            e.currentTarget.src = '/placeholder.svg';
-                            e.currentTarget.className = 'w-full h-full object-contain opacity-30 p-8';
-                          }}
-                        />
-                      </div>
                     <Card
                       className={`
                         flex flex-col h-full relative overflow-hidden group shadow-sm hover:shadow-md
-                        transition-all duration-300 rounded-t-none
+                        transition-all duration-300
                         ${isProfessional
-                          ? 'border-2 border-primary/40 bg-card hover:border-primary border-t-0'
-                          : 'border border-border bg-card hover:border-primary/60 border-t-0'
+                          ? 'border-2 border-primary/40 bg-card hover:border-primary'
+                          : 'border border-border bg-card hover:border-primary/60'
                         }
                       `}
                     >
+                      {/* Image du projet */}
+                      {project.image && (
+                        <div className="relative w-full h-56 bg-secondary/30 overflow-hidden border-b border-border">
+                          <img
+                            src={project.image}
+                            alt={project.title}
+                            className="w-full h-full object-contain p-4"
+                            onError={(e) => {
+                              // Placeholder si l'image n'existe pas
+                              e.currentTarget.src = '/placeholder.svg';
+                              e.currentTarget.className = 'w-full h-full object-contain opacity-30 p-8';
+                            }}
+                          />
+                        </div>
+                      )}
                       {/* Type Badge en haut à droite */}
                       <div className="absolute top-4 right-4 z-20">
                         <Badge
@@ -211,7 +212,6 @@ const Projects = () => {
                         </div>
                       </CardContent>
                     </Card>
-                    </div>
                   </motion.div>
                 </AnimatedSection>
               );
