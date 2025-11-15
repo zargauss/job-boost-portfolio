@@ -1,12 +1,19 @@
+import { useEffect } from "react";
 import ProjectLayout from "@/components/ProjectLayout";
 import ProjectCaseStudy from "@/components/ProjectCaseStudy";
 
 const PlateformeTelesurveillance = () => {
+  // Scroll to top on mount
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <ProjectLayout image="/plateforme-telesurveillance.png">
+    <ProjectLayout>
       <ProjectCaseStudy
         title="Plateforme de télésurveillance pour pathologies chroniques"
         tagline="Comment j'ai orchestré la transition de 5000+ patients vers une nouvelle génération d'outils de coordination des soins"
+        image="/plateforme-telesurveillance.png"
         context="J'ai rejoint une scale-up HealthTech spécialisée dans la télésurveillance et la coordination des parcours de soins. L'entreprise opérait deux plateformes en parallèle : une version historique servant 5000+ patients et 400+ professionnels de santé, et une nouvelle plateforme lancée depuis un an avec environ 500-1000 patients actifs. La société se trouvait à un carrefour stratégique : maintenir son socle de clients historiques (Instituts de Santé spécialisés en oncologie) tout en se développant sur de nouveaux marchés prometteurs (Centres de Réadaptation Thérapeutique en gériatrie, télésurveillance en santé mentale)."
         problem={`Côté utilisateurs : Les professionnels de santé utilisant la plateforme historique étaient attachés à leurs habitudes de travail et craignaient de perdre des fonctionnalités essentielles dans la migration. Ils exprimaient une forte résistance : "Nous payons pour un produit avec X fonctionnalités, nous voulons retrouver exactement les mêmes." Côté business : L'entreprise devait gérer une équation complexe : Réduire les coûts de maintenance de deux plateformes parallèles, migrer les clients historiques sans perte de revenus, développer de nouveaux marchés (CRT, parcours coordonnés) pour assurer la croissance, et faire face aux équipes commerciales, ancrées dans l'ancien produit, qui peinaient à vendre la nouvelle solution.`}
         role="En tant que Product Manager avec un background de Docteur en Pharmacie, j'ai piloté le développement produit pendant 12 mois avec pour mission de : Orchestrer la migration en analysant les véritables besoins métiers derrière les fonctionnalités existantes et accompagner la transition des clients historiques, piloter le développement en gérant 4 releases trimestrielles, conduisant les interviews utilisateurs et rédigeant les spécifications fonctionnelles, développer de nouveaux parcours en concevant les modules de télésurveillance pour l'oncologie et la santé mentale, et créer les processus en établissant un workflow de paramétrage pour l'équipe Delivery."

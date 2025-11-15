@@ -1,10 +1,17 @@
+import { useEffect } from "react";
 import ProjectLayout from "@/components/ProjectLayout";
 import ProjectCaseStudy from "@/components/ProjectCaseStudy";
 
 const PlateformePanelAnticorps = () => {
+  // Scroll to top on mount
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <ProjectLayout image="/plateforme-panel-anticorps.PNG">
+    <ProjectLayout>
       <ProjectCaseStudy
+        image="/plateforme-panel-anticorps.PNG"
         title="Plateforme B2B de Création de Panels d'Anticorps pour la Recherche Pharmaceutique"
         tagline="Comment nous avons conçu une plateforme SaaS permettant aux laboratoires de recherche de réduire de 60% les délais de développement de panels d'anticorps personnalisés, tout en garantissant la qualité et la traçabilité."
         context="En partenariat avec une biotech spécialisée en développement d'anticorps thérapeutiques, nous avons identifié un besoin critique dans le processus de recherche pharmaceutique. Les laboratoires développaient des panels d'anticorps (combinaisons d'anticorps pour des tests diagnostiques ou thérapeutiques) via un processus manuel, fragmenté et chronophage, avec des outils Excel et des échanges email multiples entre chercheurs, ingénieurs et fournisseurs."

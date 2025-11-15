@@ -1,7 +1,13 @@
+import { useEffect } from "react";
 import ProjectLayout from "@/components/ProjectLayout";
 import ProjectCaseStudy from "@/components/ProjectCaseStudy";
 
 const DispositifMedicalParkinson = () => {
+  // Scroll to top on mount
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <ProjectLayout>
       <ProjectCaseStudy

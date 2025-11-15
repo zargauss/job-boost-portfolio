@@ -5,6 +5,7 @@ import { Separator } from "@/components/ui/separator";
 interface ProjectCaseStudyProps {
   title: string;
   tagline: string;
+  image?: string;
   context: string;
   problem: string;
   role: string;
@@ -32,6 +33,7 @@ interface ProjectCaseStudyProps {
 const ProjectCaseStudy = ({
   title,
   tagline,
+  image,
   context,
   problem,
   role,
@@ -59,6 +61,20 @@ const ProjectCaseStudy = ({
       </div>
 
       <Separator />
+
+      {/* Image du projet */}
+      {image && (
+        <div className="w-full h-80 md:h-96 bg-secondary/30 overflow-hidden rounded-lg border border-border">
+          <img
+            src={image}
+            alt={title}
+            className="w-full h-full object-cover object-top"
+            onError={(e) => {
+              e.currentTarget.style.display = 'none';
+            }}
+          />
+        </div>
+      )}
 
       {/* Contexte & Problème */}
       <section className="space-y-4">

@@ -1,12 +1,19 @@
+import { useEffect } from "react";
 import ProjectLayout from "@/components/ProjectLayout";
 import ProjectCaseStudy from "@/components/ProjectCaseStudy";
 
 const ApplicationSuiviRCH = () => {
+  // Scroll to top on mount
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <ProjectLayout image="/application-suivi-rch.PNG">
+    <ProjectLayout>
       <ProjectCaseStudy
         title="Application de Suivi pour la Rectocolite Hémorragique"
         tagline="Développement d'un outil personnel de tracking médical en 3 semaines, transformant un besoin personnel en solution fonctionnelle grâce à l'IA générative"
+        image="/application-suivi-rch.PNG"
         context="Suivi gastro-entérologique nécessitant des données précises sur l'évolution des symptômes (nombre de selles, présence de sang). Réalité terrain : réponses approximatives en consultation faute d'outil de tracking adapté. Paradoxe du marché : zéro application dédiée RCH sur Google Play France, uniquement des compteurs généralistes ou des plateformes institutionnelles complexes."
         problem="Impossibilité de fournir des données fiables pour l'adaptation thérapeutique. Impact : décisions médicales basées sur du déclaratif flou plutôt que sur un suivi objectif."
         role="Product Owner et développeur sur projet personnel. Utilisateur principal de la solution. Responsable des choix produit et de l'implémentation (avec assistance IA : Claude/Cursor)."
